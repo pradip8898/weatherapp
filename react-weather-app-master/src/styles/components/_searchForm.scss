@@ -1,0 +1,72 @@
+
+
+.search-form-wrapper {
+    max-width: 65rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.form-container{
+    padding: 0 1rem;
+}
+
+.search-form__item{
+    max-width: 20rem;
+}
+
+.search-form{
+    display:flex;
+    justify-content: space-between;
+}
+
+.ui.selection.dropdown .menu>.item{
+    font-size: 1.4rem;
+}
+
+.search-form__item.btn{
+    font-size: $m-size;
+    margin : 0 2rem;
+}
+
+
+.ui.search.search-form__item ,  
+    .ui.search.search-form__item:hover,
+    .ui.search.search-form__item:focus,
+    .ui.search.search-form__item::selection{
+    background: inherit;
+    border: none;
+    border-bottom: 2px solid $light-gray;
+    border-radius: 0px;
+    color: $off-white;
+    box-shadow: none;
+}
+
+.ui.search.search-form__item input{
+    color: $off-white;
+}
+
+.ui.selection.visible.dropdown>.text:not(.default){
+    color: $off-white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-animation: autofill 0s forwards;
+    animation: autofill 0s forwards;
+}
+
+@keyframes autofill {
+    100% {
+        background: transparent;
+        color: $off-white;
+    }
+}
+
+@-webkit-keyframes autofill {
+    100% {
+        background: transparent;
+        color: $off-white;
+    }
+}
